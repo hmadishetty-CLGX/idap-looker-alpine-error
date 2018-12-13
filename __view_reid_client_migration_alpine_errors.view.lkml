@@ -24,7 +24,7 @@ view: __view_reid_client_migration_alpine_errors {
     ,    job_runtime
     ,    job_runtime_id
     from prodtracking.alpine_error
-   -- where date_added >= current_date - interval '12 hours'
+    where date_added >= current_date - interval '12 hours'
     order by date_added desc
 ;;  }
 
