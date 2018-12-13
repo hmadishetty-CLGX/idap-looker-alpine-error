@@ -24,6 +24,7 @@ view: __view_reid_client_migration_alpine_errors {
     ,    job_runtime
     ,    job_runtime_id
     from prodtracking.alpine_error
+    order by date_added desc
 ;;  }
 
       dimension: date_added {
