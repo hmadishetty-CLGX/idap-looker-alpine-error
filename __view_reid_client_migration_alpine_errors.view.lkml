@@ -88,7 +88,7 @@ view: __view_reid_client_migration_alpine_errors {
       }
 
       dimension: job_runtime {
-        type: date_time
+        type: string #date_time
         sql: ${TABLE}.job_runtime ;;
       }
 
