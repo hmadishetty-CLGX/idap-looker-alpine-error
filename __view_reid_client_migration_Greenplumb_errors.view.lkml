@@ -15,7 +15,7 @@ SELECT
       CAST(EXTRACT(EPOCH FROM (MAX(CASE WHEN state = 'End' THEN dateadded END) - MAX(CASE WHEN state = 'Start' THEN dateadded END))) AS BIGINT) as seconds
 FROM prodtracking.job_status_archive
 GROUP BY executionid, type, stepname
-ORDER BY executionid DESC, start_date desc, end_date asc, seconds desc;
+ORDER BY executionid DESC, start_date desc, end_date asc, seconds desc
 
 
 ;;  }
