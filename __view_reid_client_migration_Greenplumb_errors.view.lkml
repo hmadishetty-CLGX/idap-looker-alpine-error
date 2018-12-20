@@ -50,11 +50,6 @@ ORDER BY executionid DESC, start_date desc, end_date asc, seconds desc;
         sql: ${TABLE}.end_date ;;
       }
 
-      dimension: function_call {
-        type: string
-        sql: ${TABLE}.function_call ;;
-      }
-
       dimension: seconds {
         type: number
         sql: ${TABLE}.seconds ;;
