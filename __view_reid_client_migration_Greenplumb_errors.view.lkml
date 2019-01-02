@@ -21,7 +21,7 @@ ORDER BY executionid DESC, start_date desc, end_date asc, seconds desc
 ;;  }
 
       dimension: executionid {
-        type: number
+        type: date_time
         sql: ${TABLE}.executionid ;;
       }
 
