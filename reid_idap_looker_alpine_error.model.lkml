@@ -33,5 +33,12 @@ explore: __view_reid_client_migration_alpine_errors {
 explore: __view_reid_client_migration_Greenplumb_errors {
 
 # Give the explore a user-friendly name in the Explore menu
-  label: "REID Greenplumb Errors"
+  label: "REID Greenplum Errors"
+ }
+
+# Create an explorable item based on the "__view_REID_client_migration_Running" view
+  explore: __view_reid_client_migration_Hive_errors {
+
+# Give the explore a user-friendly name in the Explore menu
+  label: "REID Hive Errors"
 }
