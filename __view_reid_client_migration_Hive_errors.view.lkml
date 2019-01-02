@@ -15,9 +15,7 @@ SELECT
       unix_timestamp(MAX(CASE WHEN state = 'End' THEN dateadded END)) - unix_timestamp(MAX(CASE WHEN state = 'Start' THEN dateadded END)) as seconds
 FROM prodtracking.job_status_archive
 GROUP BY executionid, type, stepname
-ORDER BY executionid DESC, start_date desc, end_date asc, seconds desc;
-
-
+ORDER BY executionid DESC, start_date desc, end_date asc, seconds desc
 
 ;;  }
 
